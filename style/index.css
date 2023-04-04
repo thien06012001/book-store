@@ -10,14 +10,10 @@
   text-align: center;
   padding-top: 20px;
   /* margin-top: 20px; */
-  color: #0ff;
+  color: white;
   font-family: Sriracha;
   background-color: #f1f2f6;
-  text-shadow:
-  0 0 15px whitesmoke,
-   5px 0 20px #0ff,
-   -5px 0 20px #0ff,
-  0 0 10px #fff,
-  5px 0 5px #0ff; 
+  text-shadow: 0 0 10px #0ff,
+  0 0 10px #0ff;
 }
 
