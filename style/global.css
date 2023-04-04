@@ -49,13 +49,12 @@ ul {
 }
 
 .theme-box {
-    /* background-color: #222; */
+    background-color: white;
     box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5),
         inset 3px 3px 5px rgba(255, 255, 255, 0.07);
     border-radius: 9999px;
     cursor: pointer;
     float: right;
-    /* padding: 40px 20px; */
     width: 40px;
     height: 40px;
     position: fixed;
@@ -151,6 +150,39 @@ ul {
     color: white;
 }
 
+.theme-change:checked~footer {
+    background-color: #222;
+    /* text-shadow: 0 0 10px rgba(33, 156, 243, 1),
+        0 0 10px rgba(33, 156, 243, 1); */
+    color: white;
+    box-shadow: inset -6px -6px 15px rgba(0, 0, 0, 0.5),
+        inset 6px 6px 10px rgba(255, 255, 255, 0.07);
+}
+
+.theme-change:checked~footer a {
+    background-color: #222;
+    color: white;
+    text-shadow: 0 0 10px rgba(33, 156, 243, 1),
+        0 0 10px rgba(33, 156, 243, 1);
+    box-shadow: inset -6px -6px 15px rgba(0, 0, 0, 0.5),
+        inset 6px 6px 10px rgba(255, 255, 255, 0.07);
+}
+
+.theme-change:checked~footer a:hover {
+    box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+        inset 2px 2px 4px rgba(255, 255, 255, 0.07);
+}
+
+.theme-change:checked~footer a:active {
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5),
+        3px 3px 5px rgba(255, 255, 255, 0.07);
+}
+
+.theme-change:checked~footer i {
+    text-shadow: 0 0 10px rgba(33, 156, 243, 1),
+        0 0 10px rgba(33, 156, 243, 1);
+    color: white;
+}
 
 /* Header */
 header {
@@ -292,7 +324,7 @@ i {
     box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
         -6px -6px 10px rgba(255, 255, 255, 0.5),
         6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
-   
+
 
 }
 
@@ -309,7 +341,81 @@ i {
         inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+footer {
+    background-color: #f1f2f6;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.footer-container {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.icon-container {
+    display: flex;
+    width: 20%;
+    padding: 10px 10px 10px 0px;
+}
+
+.icon-container a {
+    padding: 10px;
+    margin: auto;
+    border-radius: 9999px;
+    box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.7),
+        -3px -3px 5px rgba(255, 255, 255, 0.5),
+        3px 3px 4px rgba(255, 255, 255, 0.075), 3px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container a:hover {
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.6),
+        -1px -1px 2px rgba(255, 255, 255, 0.4),
+        1px 1px 1px rgba(255, 255, 255, 0.05), 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container a:active {
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.7),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 1px rgba(255, 255, 255, 0.075),
+    inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.contact-us {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us a {
+    height: 40px;
+    width: 30%;
+    max-width: 150px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.7),
+        -3px -3px 5px rgba(255, 255, 255, 0.5),
+        3px 3px 4px rgba(255, 255, 255, 0.075), 3px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.contact-us a:hover {
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.6),
+        -1px -1px 2px rgba(255, 255, 255, 0.4),
+        1px 1px 1px rgba(255, 255, 255, 0.05), 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us a:active {
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.7),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 1px rgba(255, 255, 255, 0.075),
+    inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
 /* Responsive design */
 @media (max-width: 960px) {
     header {
@@ -413,13 +519,14 @@ i {
     }
 
     .menu {
-        height: 30%;
+        height: 40%;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-
-
-
+    .icon-container {
+        display: flex;
+        min-width: 50%;
+    }
 }
