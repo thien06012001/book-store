@@ -5,15 +5,42 @@
   box-sizing: border-box;
 }
 
+.theme-change:checked~.banner-container {
+  background-color: #222;
+}
+
+.theme-change:checked~.banner-container {
+  color: white;
+  text-shadow: 0 0 5px #0ff,
+    0 0 5px #0ff;
+}
 
 .category-header {
   text-align: center;
-  padding-top: 20px;
-  /* margin-top: 20px; */
+  /* padding-top: 20px; */
+  padding-bottom: 20px;
+  font-size: xx-large;
   color: white;
   font-family: Sriracha;
-  
+
   text-shadow: 0 0 10px #0ff,
-  0 0 10px #0ff;
+    0 0 10px #0ff;
 }
 
+.banner-container {
+  width: 100%;
+  background-color: #f1f2f6;
+  height: 50vh;
+  padding: 15px;
+}
+
+.banner-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  border-radius: 25px;
+ 
+  box-shadow: inset 5px 5px 10px #a1a2a5,
+            inset -5px -5px 10px #ffffff;
+}
