@@ -375,6 +375,7 @@ footer {
     align-items: center;
 }
 .contact-us a {
+    color: black;
     height: 40px;
     width: 30%;
     max-width: 150px;
@@ -382,6 +383,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s ease-in-out;
     border-radius: 10px;
     box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.7),
         -3px -3px 5px rgba(255, 255, 255, 0.5),
@@ -539,5 +541,6 @@ footer {
 
     .contact-us a {
         margin-top: 10px;
+        
     }
 }

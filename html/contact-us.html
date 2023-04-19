@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/contact-us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <input class="theme-change" type="checkbox" id="theme-change" />
+    <label for="theme-change" class="theme-box">
+      <i id="theme-icon-light" class="fa-solid fa-sun fa-xl"></i>
+      <i id="theme-icon-dark" class="fa-solid fa-moon fa-xl"></i>
+    </label>
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <a href="../index.html" class="logo">
+        <div class="blob">
+          <i class="fa-solid fa-book fa-fade"></i>
+        </div>
+      </a>
+      <!-- Responsive menu icon -->
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
+
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="../index.html">Home Page</a></li>
+          <li><a href="../html/category1.html">Category1</a></li>
+          <li><a href="../html/category2.html">Category2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="form-container">
+      <h1>Contact Us</h1>
+      <form class="contact-form" method="get" action="">
+        <div class="contact-purpose">
+          <label for="contact-purpose">Contact purpose:</label>
+          <select name="contact-purpose" id="contact-purpose">
+            <option value="sell-book">I want to sell books</option>
+            <option value="buy-book">I want to buy books</option>
+          </select>
+        </div>
+
+        <div class="user-info">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="user-info">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="user-info">
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+
+        <div class="contact-pref">
+          <label for="checkbox-container">Contact preference:</label>
+          <div class="checkbox-container" id="checkbox-container">
+            <div>
+              <input
+                type="checkbox"
+                id="by-email"
+                name="by-email"
+                value="by-email"
+              />
+              <label for="by-email">By email</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="by-phone"
+                name="by-phone"
+                value="by-phone"
+              />
+              <label for="by-phone">By phone</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="newsletter">
+          <label for="radio-container">Receive weekly newsletter:</label>
+          <div class="radio-container" id="radio-container">
+            <div>
+              <input type="radio" id="yes" name="choices" value="yes" />
+              <label for="yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" id="no" name="choices" value="no" />
+              <label for="no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-note">
+          <label for="note">Extra notes:</label>
+          <textarea name="note" id="note" rows="5"></textarea>
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+    <hr>
+    <footer>
+        <div class="footer-container">
+          <p>
+            Neumorphism book-store website is a book market website which using
+            neumorphism effect for the whole project
+          </p>
+          <div class="icon-container">
+            <a style="margin-left: 0" href=""
+              ><i class="fa-brands fa-facebook fa-lg"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-lg"></i></a>
+          </div>
+        </div>
+  
+        <div class="contact-us">
+          <div class="contact-us">
+            <a href="">About Us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms</a>
+            <a href="">Copyright</a>
+            <a href="">Contact Us</a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
