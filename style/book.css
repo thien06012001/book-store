@@ -37,7 +37,6 @@ Table of Contents
 /////////////////////////////////////////////////////*/
 .main {
 	background-color: #f1f2f6;
-	;
 }
 
 .book-category {
@@ -57,7 +56,8 @@ Table of Contents
 .container {
 	width: 90%;
 	height: 80%;
-	padding: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 12px;
