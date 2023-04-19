@@ -22,7 +22,7 @@
   font-size: xx-large;
   color: white;
   font-family: Sriracha;
-
+  cursor: pointer;
   text-shadow: 0 0 10px #0ff,
     0 0 10px #0ff;
 }
@@ -43,4 +43,18 @@
  
   box-shadow: inset 5px 5px 10px #a1a2a5,
             inset -5px -5px 10px #ffffff;
+}
+
+.addtion-content {
+  width: 50%;
+}
+
+.video-container {
+  width: 50%;
+  padding: 30px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
 }

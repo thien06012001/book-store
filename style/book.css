@@ -43,11 +43,13 @@ Table of Contents
 .book-category {
 	max-width: 100%;
 	margin: auto;
-	height: 50vh;
+	/* height: 50vh; */
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 50px;
 }
 
 
@@ -55,6 +57,7 @@ Table of Contents
 .container {
 	width: 90%;
 	height: 80%;
+	padding: 50px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 12px;

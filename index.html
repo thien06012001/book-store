@@ -1,329 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/global.css">
-    <link rel="stylesheet" href="style/book.css">
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/book.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-    <input class="theme-change" type="checkbox" id="theme-change">
+  <body>
+    <input class="theme-change" type="checkbox" id="theme-change" />
     <label for="theme-change" class="theme-box">
-        <i id="theme-icon-light" class="fa-solid fa-sun fa-xl"></i>
-        <i id="theme-icon-dark" class="fa-solid fa-moon fa-xl"></i>
+      <i id="theme-icon-light" class="fa-solid fa-sun fa-xl"></i>
+      <i id="theme-icon-dark" class="fa-solid fa-moon fa-xl"></i>
     </label>
     <!-- Header -->
     <header>
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <div class="blob">
+          <i class="fa-solid fa-book fa-fade"></i>
+        </div>
+      </a>
+      <!-- Responsive menu icon -->
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
 
-        <!-- Logo -->
-        <a href="#" class="logo">
-            <div class='blob'>
-                <i class="fa-solid fa-book fa-fade"></i>
-            </div>
-        </a>
-        <!-- Responsive menu icon -->
-        <input class="side-menu" type="checkbox" id="side-menu" />
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="#">Home Page</a></li>
-                <li><a href="html/category1.html">Category1</a></li>
-                <li><a href="html/category2.html">Category2</a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#">Home Page</a></li>
+          <li><a href="html/category1.html">Category1</a></li>
+          <li><a href="html/category2.html">Category2</a></li>
+        </ul>
+      </nav>
     </header>
     <div class="banner-container">
-        <div class="banner-content">
-            <div class="type-writer">
-
-            </div>
-            <div class="video-container"></div>
+      <div class="banner-content">
+        <div class="addtion-content"></div>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/AZpv9cb-H-M"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
+      </div>
     </div>
     <main class="main">
-        <section class="book-category">
-            <h1 class="category-header">Website Programming Language Books</h1>
-            <div class="container">
-                <div class="component">
-                    <ul class="align">
-                        <li>
-                            <figure class='book'>
-                                <!-- Front -->
-                                <ul class='hardcover_front'>
-                                    <li>
-                                        <div class="coverDesign html-color">
-                                            <span class="ribbon">SALE</span>
-                                            <h1>HTML</h1>
-                                            <p>Basic</p>
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                </ul>
+      <section class="book-category">
+        <a href="" class="category-header"
+          >Website Programming Language Books</a
+        >
+        <div class="container">
+          <div class="component">
+            <ul class="align">
+              <li>
+                <figure class="book">
+                  <!-- Front -->
+                  <ul class="hardcover_front">
+                    <li>
+                      <div class="coverDesign html-color">
+                        <span class="ribbon">SALE</span>
+                        <h1>HTML</h1>
+                        <p>Basic</p>
+                      </div>
+                    </li>
+                    <li></li>
+                  </ul>
 
-                                <!-- Pages -->
+                  <!-- Pages -->
 
-                                <ul class='page'>
-                                    <li></li>
-                                    <li>
-                                        <img class="book-logo" src="assets/images/html.png" alt="">
-                                        <a class="btn" href="#">Download</a>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                  <ul class="page">
+                    <li></li>
+                    <li>
+                      <img
+                        class="book-logo"
+                        src="assets/images/html.png"
+                        alt=""
+                      />
+                      <a class="btn" href="#">Detail</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
 
-                                <!-- Back -->
+                  <!-- Back -->
 
-                                <ul class='hardcover_back'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <ul class='book_spine'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </figure>
-                        </li>
+                  <ul class="hardcover_back">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class="book_spine">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </figure>
+              </li>
 
-                        <li>
-                            <figure class='book'>
-                                <!-- Front -->
-                                <ul class='hardcover_front'>
-                                    <li>
-                                        <div class="coverDesign css-color">
-                                            <!-- <span class="ribbon">NEW</span> -->
-                                            <h1>CSS</h1>
-                                            <p>For beginner</p>
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                </ul>
+              <li>
+                <figure class="book">
+                  <!-- Front -->
+                  <ul class="hardcover_front">
+                    <li>
+                      <div class="coverDesign css-color">
+                        <!-- <span class="ribbon">NEW</span> -->
+                        <h1>CSS</h1>
+                        <p>For beginner</p>
+                      </div>
+                    </li>
+                    <li></li>
+                  </ul>
 
-                                <!-- Pages -->
+                  <!-- Pages -->
 
-                                <ul class='page'>
-                                    <li></li>
-                                    <li>
-                                        <img class="book-logo" src="assets/images/css3.png" alt="">
-                                        <a class="btn" href="#">Download</a>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                  <ul class="page">
+                    <li></li>
+                    <li>
+                      <img
+                        class="book-logo"
+                        src="assets/images/css3.png"
+                        alt=""
+                      />
+                      <a class="btn" href="#">Detail</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
 
-                                <!-- Back -->
+                  <!-- Back -->
 
-                                <ul class='hardcover_back'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <ul class='book_spine'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </figure>
-                        </li>
+                  <ul class="hardcover_back">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class="book_spine">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </figure>
+              </li>
 
-                        <li>
-                            <figure class='book'>
-                                <!-- Front -->
-                                <ul class='hardcover_front'>
-                                    <li>
-                                        <div class="coverDesign js-color">
-                                            <span class="ribbon">NEW</span>
-                                            <h1>JS</h1>
-                                            <p>For web design</p>
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                </ul>
+              <li>
+                <figure class="book">
+                  <!-- Front -->
+                  <ul class="hardcover_front">
+                    <li>
+                      <div class="coverDesign js-color">
+                        <span class="ribbon">NEW</span>
+                        <h1>JS</h1>
+                        <p>For web design</p>
+                      </div>
+                    </li>
+                    <li></li>
+                  </ul>
 
-                                <!-- Pages -->
+                  <!-- Pages -->
 
-                                <ul class='page'>
-                                    <li></li>
-                                    <li>
-                                        <img class="book-logo" src="assets/images/javascript-logo.png" alt="">
-                                        <a class="btn" href="#">Download</a>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                  <ul class="page">
+                    <li></li>
+                    <li>
+                      <img
+                        class="book-logo"
+                        src="assets/images/javascript-logo.png"
+                        alt=""
+                      />
+                      <a class="btn" href="#">Detail</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
 
-                                <!-- Back -->
+                  <!-- Back -->
 
-                                <ul class='hardcover_back'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <ul class='book_spine'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="book-category">
-            <h1 class="category-header">Framework material</h1>
-            <div class="container">
-                <div class="component">
-                    <ul class="align">
-                        <li>
-                            <figure class='book'>
-                                <!-- Front -->
-                                <ul class='hardcover_front'>
-                                    <li>
-                                        <div class="coverDesign black">
-                                            <span class="ribbon">HOT</span>
-                                            <h1>NEXTJS</h1>
-                                            <p>Tutorial</p>
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                </ul>
-
-                                <!-- Pages -->
-
-                                <ul class='page'>
-                                    <li></li>
-                                    <li>
-                                        <img class="book-logo" src="assets/images/nextjs-logo.png" alt="">
-                                        <a class="btn" href="#">Download</a>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-
-                                <!-- Back -->
-
-                                <ul class='hardcover_back'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <ul class='book_spine'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </figure>
-                        </li>
-
-                        <li>
-                            <figure class='book'>
-                                <!-- Front -->
-                                <ul class='hardcover_front'>
-                                    <li>
-                                        <div class="coverDesign react">
-                                            <!-- <span class="ribbon">NEW</span> -->
-                                            <h1>REACT</h1>
-                                            <p>Tutorial</p>
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                </ul>
-
-                                <!-- Pages -->
-
-                                <ul class='page'>
-                                    <li></li>
-                                    <li>
-                                        <img class="book-logo" src="assets/images/react.png" alt="">
-                                        <a class="btn" href="#">Download</a>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-
-                                <!-- Back -->
-
-                                <ul class='hardcover_back'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <ul class='book_spine'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </figure>
-                        </li>
-
-                        <li>
-                            <figure class='book'>
-                                <!-- Front -->
-                                <ul class='hardcover_front'>
-                                    <li>
-                                        <div class="coverDesign angular-color">
-                                            <span class="ribbon">NEW</span>
-                                            <h1>Angular</h1>
-                                            <p>Tutorial</p>
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                </ul>
-
-                                <!-- Pages -->
-
-                                <ul class='page'>
-                                    <li></li>
-                                    <li>
-                                        <img class="book-logo" src="assets/images/angular-logo.png" alt="">
-                                        <a class="btn" href="#">Download</a>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-
-                                <!-- Back -->
-
-                                <ul class='hardcover_back'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <ul class='book_spine'>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <hr>
-    <footer>
-        <div class="footer-container">
-            <p>Neumorphism book-store website is a book market website which using neumorphism effect for the whole
-                project
-            </p>
-            <div class="icon-container">
-                <a style="margin-left: 0;" href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-github fa-lg"></i></a>
-            </div>
+                  <ul class="hardcover_back">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class="book_spine">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </figure>
+              </li>
+            </ul>
+          </div>
         </div>
+      </section>
 
-        <div class="contact-us"><a href="">Contact Us</a></div>
+      <section class="book-category">
+        <a href="" class="category-header">Framework material</a>
+        <div class="container">
+          <div class="component">
+            <ul class="align">
+              <li>
+                <figure class="book">
+                  <!-- Front -->
+                  <ul class="hardcover_front">
+                    <li>
+                      <div class="coverDesign black">
+                        <span class="ribbon">HOT</span>
+                        <h1>NEXTJS</h1>
+                        <p>Tutorial</p>
+                      </div>
+                    </li>
+                    <li></li>
+                  </ul>
+
+                  <!-- Pages -->
+
+                  <ul class="page">
+                    <li></li>
+                    <li>
+                      <img
+                        class="book-logo"
+                        src="assets/images/nextjs-logo.png"
+                        alt=""
+                      />
+                      <a class="btn" href="#">Detail</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+
+                  <!-- Back -->
+
+                  <ul class="hardcover_back">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class="book_spine">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </figure>
+              </li>
+
+              <li>
+                <figure class="book">
+                  <!-- Front -->
+                  <ul class="hardcover_front">
+                    <li>
+                      <div class="coverDesign react">
+                        <!-- <span class="ribbon">NEW</span> -->
+                        <h1>REACT</h1>
+                        <p>Tutorial</p>
+                      </div>
+                    </li>
+                    <li></li>
+                  </ul>
+
+                  <!-- Pages -->
+
+                  <ul class="page">
+                    <li></li>
+                    <li>
+                      <img
+                        class="book-logo"
+                        src="assets/images/react.png"
+                        alt=""
+                      />
+                      <a class="btn" href="#">Detail</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+
+                  <!-- Back -->
+
+                  <ul class="hardcover_back">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class="book_spine">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </figure>
+              </li>
+
+              <li>
+                <figure class="book">
+                  <!-- Front -->
+                  <ul class="hardcover_front">
+                    <li>
+                      <div class="coverDesign angular-color">
+                        <span class="ribbon">NEW</span>
+                        <h1>Angular</h1>
+                        <p>Tutorial</p>
+                      </div>
+                    </li>
+                    <li></li>
+                  </ul>
+
+                  <!-- Pages -->
+
+                  <ul class="page">
+                    <li></li>
+                    <li>
+                      <img
+                        class="book-logo"
+                        src="assets/images/angular-logo.png"
+                        alt=""
+                      />
+                      <a class="btn" href="#">Detail</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+
+                  <!-- Back -->
+
+                  <ul class="hardcover_back">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class="book_spine">
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <div class="footer-container">
+        <p>
+          Neumorphism book-store website is a book market website which using
+          neumorphism effect for the whole project
+        </p>
+        <div class="icon-container">
+          <a style="margin-left: 0" href=""
+            ><i class="fa-brands fa-facebook fa-lg"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+          <a href=""><i class="fa-brands fa-github fa-lg"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-us"><a href="">Contact Us</a></div>
     </footer>
-
-</body>
-
+  </body>
 </html>
