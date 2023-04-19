@@ -71,6 +71,7 @@
 .book-info p {
     margin-top: 20px;
     color: black;
+    text-align: center;
 }
 
 main hr {

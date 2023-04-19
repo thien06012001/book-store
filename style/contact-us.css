@@ -132,6 +132,8 @@
     display: block;
 }
 
+
+
 .checkbox-container {
     width: 50%;
     display: flex;
@@ -144,8 +146,10 @@
 
 .checkbox-container div label {
     width: 100%;
-    display: block;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .newsletter {
