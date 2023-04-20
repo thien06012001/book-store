@@ -1,3 +1,11 @@
+  /* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Chau Chan Thien
+  ID: s3975010
+  Acknowledgement: Codepen.io, uiverse.io, Amazon.com, https://tympanus.net */
+
 .theme-change:checked~.form-container {
     background-color: #222;
 }
