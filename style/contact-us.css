@@ -87,11 +87,10 @@
 }
 
 .contact-purpose {
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
-    
-
+    margin-bottom: 20px;
 }
 
 .contact-purpose label {
@@ -139,7 +138,6 @@
     width: 50%;
     display: block;
 }
-
 
 
 .checkbox-container {
