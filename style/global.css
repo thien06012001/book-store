@@ -12,8 +12,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
+    color: #44476a;
 }
 
 *,
@@ -33,7 +34,6 @@ body {
     /* background: #e0e5ec; */
     font-family: "Poppins", sans-serif;
     height: fit-content;
-
 }
 
 html,
@@ -195,10 +195,9 @@ header {
     z-index: 12;
 }
 
-/* Logo */
+/* Logo styling*/
 .logo {
     display: inline-block;
-    color: black;
     font-size: 60px;
     width: 50%;
 }
@@ -216,7 +215,7 @@ header {
     box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0, 0px 0px 10px 0px #c9c9c9;
     animation: animate 10s linear infinite;
 }
-
+/* Animate of the Logo */
 @keyframes animate {
     0% {
         border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
@@ -269,7 +268,6 @@ header {
 i {
     font-size: .5em;
     filter: blur(0.3px);
-    color: black;
 }
 
 /* Hide Checkbox */
@@ -301,7 +299,7 @@ i {
     margin: auto;
     width: 20%;
 }
-
+/* Neumorphism effect for button in normal state, hover state and click state */
 .menu a {
     display: flex;
     align-items: center;
@@ -310,7 +308,6 @@ i {
     border-radius: 10px;
     width: 100%;
     height: 50px;
-    color: #444;
     text-align: center;
     cursor: pointer;
     background: #efefef;
@@ -321,8 +318,6 @@ i {
     box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
         -6px -6px 10px rgba(255, 255, 255, 0.5),
         6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
-
-
 }
 
 .menu a:hover {
@@ -337,7 +332,7 @@ i {
         inset 2px 2px 2px rgba(255, 255, 255, 0.075),
         inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
-
+/* Footer styling */
 footer {
     background-color: #ecf0f3;
     height: auto;
@@ -387,8 +382,8 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
 .contact-us a {
-    color: black;
     height: 40px;
     width: 30%;
     max-width: 150px;
@@ -417,10 +412,11 @@ footer {
 }
 /* Responsive design */
 @media (max-width: 960px) {
+    /* Setting the position of the components in the header */
     header {
         justify-content: space-between;
     }
-
+    /* Theme color changing styling */
     .theme-change:checked~header .hamb .hamb-line {
         background-color: white;
         box-shadow: 0 0 10px rgba(33, 156, 243, 1),
@@ -441,6 +437,8 @@ footer {
     .menu li {
         width: 40%;
     }
+
+    /* Hamburger menu button design */
     .hamb {
         display: flex;
         justify-content: end;
@@ -488,9 +486,8 @@ footer {
     .side-menu:checked~nav {
         max-height: 100%;
     }
-
+ 
     .side-menu:checked~.hamb .hamb-line {
-        /* background-color: transparent; */
         visibility: hidden;
     }
 

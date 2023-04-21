@@ -70,7 +70,9 @@
 	box-shadow: inset 5px 5px 10px #a1a2a5,
 		inset -5px -5px 10px #ffffff;
 }
-
+.website-name {
+	padding: 20px;
+}
 /* Search Bar styling */
 .finder {
 	border: 1px solid #fff;
@@ -175,7 +177,6 @@ Table of Contents
 .book-category {
 	max-width: 100%;
 	margin: auto;
-	/* height: 50vh; */
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
@@ -236,7 +237,6 @@ ul {
 }
 
 a {
-	color: #2c3e50;
 	text-decoration: none;
 }
 
@@ -320,7 +320,7 @@ a {
 }
 
 /* thickness of cover */
-
+/* Setting book pages color */
 .hardcover_front li:first-child:after,
 .hardcover_front li:first-child:before,
 .hardcover_front li:last-child:after,
@@ -872,6 +872,8 @@ figcaption p {
 /* Responsive */
 
 @media (max-width: 960px) {
+	
+	/* Re-arrange the banner content order vertically */
 	.banner-content {
 		flex-direction: column;
 	}
@@ -889,7 +891,7 @@ figcaption p {
 		padding-bottom: 50px;
 		height: fit-content;
 	}
-
+	/* Re-arrange books order in category vertically */
 	.container {
 		width: 80%;
 		height: 80%;

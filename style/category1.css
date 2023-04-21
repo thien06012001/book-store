@@ -105,7 +105,6 @@
 	flex: 1;
 }
 .name-inner a {
-    color: black;
     height: 5vh;
     width: 100%;
     overflow: scroll;
@@ -144,7 +143,6 @@
 	flex: 1;
 }
 .price-inner p {
-    color: black;
     overflow: scroll;
     display: flex;
     flex-wrap: wrap;
