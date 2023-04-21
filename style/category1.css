@@ -6,6 +6,8 @@
   ID: s3975010
   Acknowledgement: Codepen.io, uiverse.io, Amazon.com, https://tympanus.net */
 
+
+  /* Theme color changing styling */
 .theme-change:checked~.categories {
     background-color: #222;
 }
@@ -22,6 +24,8 @@
 .theme-change:checked~.categories .category-container .book-container .book-info p{
     color: white;
 }
+
+/* Book Category styling */
 .categories {
     width: 100%;
     background-color: #f1f2f6;
@@ -40,7 +44,6 @@
 
 .category-header {
     text-align: center;
-    /* padding-top: 20px; */
     padding-bottom: 20px;
     font-size: xx-large;
     color: white;
@@ -66,7 +69,7 @@
         3px 3px 8px 0 #b0c4db,
         3px 3px 15px 0 #c4ceda;
 }
-
+/* Book styling */
 .book-info {
     width: 30%;
     height: fit-content;
@@ -89,7 +92,6 @@
 .name-outer{
     display: flex;
 	width: 100%;
-	/* padding: 1.5rem 2rem; */
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
@@ -130,7 +132,6 @@
 .price-outer{
     display: flex;
 	width: 100%;
-	/* padding: 1.5rem 2rem; */
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
@@ -429,6 +430,8 @@ main hr {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* Responsive */
 @media (max-width: 906px) {
     .category-container {
         padding-left: 0px;

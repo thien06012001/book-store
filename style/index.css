@@ -1,5 +1,5 @@
-@import url(//fonts.googleapis.com/css?family=Indie+Flower); 
-  /* RMIT University Vietnam
+@import url(//fonts.googleapis.com/css?family=Indie+Flower);
+/* RMIT University Vietnam
   Course: COSC2430 Web Programming
   Semester: 2023A
   Assessment: Assignment 1
@@ -9,35 +9,38 @@
 
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Theme Change */
+.theme-change:checked~.banner-container {
+	background-color: #222;
 }
 
 .theme-change:checked~.banner-container {
-  background-color: #222;
+	color: white;
+	text-shadow: 0 0 5px #0ff,
+		0 0 5px #0ff;
 }
 
-.theme-change:checked~.banner-container {
-  color: white;
-  text-shadow: 0 0 5px #0ff,
-    0 0 5px #0ff;
-}
 .theme-change:checked~.banner-container .banner-content {
-  color: white;
-  box-shadow: inset 5px 5px 10px #171717,
-            inset -5px -5px 10px #2d2d2d;
+	color: white;
+	box-shadow: inset 5px 5px 10px #171717,
+		inset -5px -5px 10px #2d2d2d;
 }
 
 .theme-change:checked~.banner-container .banner-content .addition-content .finder {
-  background-color: #222222;
-  border: 1px solid rgb(50, 50, 50);
-  box-shadow: 9px 9px 16px rgba(34, 34, 34, 0.6), -9px -9px 16px rgba(0, 0, 0, 0.5);
+	background-color: #222222;
+	border: 1px solid rgb(50, 50, 50);
+	box-shadow: 9px 9px 16px rgba(34, 34, 34, 0.6), -9px -9px 16px rgba(0, 0, 0, 0.5);
 }
 
 .theme-change:checked~.banner-container .banner-content .addition-content .finder .finder__outer {
-  box-shadow: inset 10px 10px 15px -10px #171717, inset -10px -10px 15px -10px #2d2d2d;
+	box-shadow: inset 10px 10px 15px -10px #171717, inset -10px -10px 15px -10px #2d2d2d;
 }
+
 .theme-change:checked~.main {
 	background-color: #222;
 }
@@ -47,37 +50,28 @@
 		inset 3px 3px 5px rgba(255, 255, 255, 0.07);
 }
 
-.category-header {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: xx-large;
-  color: white;
-  font-family: Sriracha;
-  cursor: pointer;
-  text-shadow: 0 0 10px #0ff,
-    0 0 10px #0ff;
-}
 
+/* Banner Styling */
 .banner-container {
-  width: 100%;
-  background-color: #f1f2f6;
+	width: 100%;
+	background-color: #f1f2f6;
 
-  height: fit-content;
-  padding: 15px;
+	height: fit-content;
+	padding: 15px;
 }
 
 .banner-content {
-  width: 90%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  border-radius: 25px;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	border-radius: 25px;
 
-  box-shadow: inset 5px 5px 10px #a1a2a5,
-    inset -5px -5px 10px #ffffff;
+	box-shadow: inset 5px 5px 10px #a1a2a5,
+		inset -5px -5px 10px #ffffff;
 }
 
-
+/* Search Bar styling */
 .finder {
 	border: 1px solid #fff;
 	background-color: #f1f2f6;
@@ -85,7 +79,8 @@
 	border-radius: 15px;
 	padding: 8px;
 	box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-  }
+}
+
 .finder__outer {
 	display: flex;
 	width: 100%;
@@ -93,17 +88,17 @@
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
-  }
-  
-  .finder__inner {
+}
+
+.finder__inner {
 	display: flex;
 	align-items: center;
 	position: relative;
 	flex: 1;
-  }
-  
-  
-  .finder__input {
+}
+
+
+.finder__input {
 	height: 80%;
 	width: 90%;
 	border: none;
@@ -111,36 +106,45 @@
 	outline: none;
 	font-size: 1.5rem;
 	letter-spacing: 0.75px;
-  }
-  
-  #finder__icon {
+}
+
+#finder__icon {
 	font-size: larger;
 	margin-right: 5px;
-  }
-  
+}
+
 .addition-content {
-  width: 50%;
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	width: 50%;
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .video-container {
-  width: 50%;
-  height: 50vh;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
+	width: 50%;
+	height: 50vh;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
 }
 
 .video-container iframe {
-  width: 80%;
-  height: 100%;
+	width: 80%;
+	height: 100%;
 }
 
-
+.category-header {
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: xx-large;
+	color: white;
+	font-family: Sriracha;
+	cursor: pointer;
+	text-shadow: 0 0 10px #0ff,
+		0 0 10px #0ff;
+}
 
 
 
@@ -254,18 +258,15 @@ a {
 	width: 70%;
 	padding: 10px;
 }
+
 .btn {
 	display: inline-block;
 	text-transform: uppercase;
 	border: 2px solid #2c3e50;
-	/* margin-top: 100px; */
 	font-size: 1.2em;
 	font-weight: 700;
 	padding: 0.1em 0.8em;
 	text-align: center;
-	/* -webkit-transform: rotate(20deg);
-	-moz-transform: rotate(20deg);
-	transform: rotate(20deg); */
 	font-family: "Indie Flower", serif;
 	-webkit-transition: color 0.3s, border-color 0.3s;
 	-moz-transition: color 0.3s, border-color 0.3s;
@@ -769,13 +770,8 @@ a {
 	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.green {
-	background: #2ecc71;
-}
+/* Color for the cover page */
 
-.red {
-	background: #cb0000;
-}
 .html-color {
 	background: linear-gradient(#e34c26, #f06529);
 }
@@ -785,33 +781,15 @@ a {
 }
 
 .js-color {
-	background:#f0db4f;
+	background: #f0db4f;
 }
-.angular-color{
+
+.angular-color {
 	background: linear-gradient(#dd1b16, #a6420d);
 }
-.yellow {
-	background-color: #f1c40f;
-	background-image: -webkit-linear-gradient(top, #f1c40f 58%, #e7ba07 0%);
-	background-image: -moz-linear-gradient(top, #f1c40f 58%, #e7ba07 0%);
-	background-image: linear-gradient(top, #f1c40f 58%, #e7ba07 0%);
-}
 
-.blue {
-	background-color: #3498db;
-	background-image: -webkit-linear-gradient(top, #3498db 58%, #2a90d4 0%);
-	background-image: -moz-linear-gradient(top, #3498db 58%, #2a90d4 0%);
-	background-image: linear-gradient(top, #3498db 58%, #2a90d4 0%);
-}
 
-.grey {
-	background-color: #f8e9d1;
-	background-image: -webkit-linear-gradient(top, #f8e9d1 58%, #e7d5b7 0%);
-	background-image: -moz-linear-gradient(top, #f8e9d1 58%, #e7d5b7 0%);
-	background-image: linear-gradient(top, #f8e9d1 58%, #e7d5b7 0%);
-}
-
-.black {
+.nextjs-color {
 	background: #0f0f0f;
 }
 
@@ -819,14 +797,8 @@ a {
 	background-color: #61DBFB;
 }
 
-.angular {
-	background-color: #dd1b16;
-	background-image: -webkit-linear-gradient(top, #dd1b16 58%, #a6120d 0%);
-	background-image: -moz-linear-gradient(top, #dd1b16 58%, #a6120d 0%);
-	background-image: linear-gradient(top, #dd1b16 58%, #a6120d 0%);
-}
 
-/* Basic ribbon */
+/* Ribbon for book */
 
 .ribbon {
 	background: #c0392b;
@@ -900,22 +872,22 @@ figcaption p {
 /* Responsive */
 
 @media (max-width: 960px) {
-  .banner-content {
-    flex-direction: column;
-  }
+	.banner-content {
+		flex-direction: column;
+	}
 
-  .addition-content {
-    width: 100%;
-  }
-  .video-container {
-    width: 100%;
-  }
+	.addition-content {
+		width: 100%;
+	}
 
-  .book-category {
+	.video-container {
+		width: 100%;
+	}
+
+	.book-category {
 		padding-top: 50px;
 		padding-bottom: 50px;
 		height: fit-content;
-
 	}
 
 	.container {

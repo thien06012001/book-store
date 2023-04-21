@@ -6,6 +6,8 @@
   ID: s3975010
   Acknowledgement: Codepen.io, uiverse.io, Amazon.com, https://tympanus.net */
 
+  /* Theme changing styling */
+
   .theme-change:checked~.categories {
     background-color: #222;
   }
@@ -24,6 +26,7 @@
     color: white;
   }
 
+  /* Book category styling */
   .categories {
     width: 100%;
     background-color: #f1f2f6;
@@ -42,7 +45,6 @@
 
   .category-header {
     text-align: center;
-    /* padding-top: 20px; */
     padding-bottom: 20px;
     font-size: xx-large;
     color: white;
@@ -52,7 +54,7 @@
       0 0 10px #0ff;
   }
 
-
+  /* Book styling */
   .book-container {
     width: 90%;
     height: 80%;
@@ -68,6 +70,7 @@
       3px 3px 8px 0 #b0c4db,
       3px 3px 15px 0 #c4ceda;
   }
+
 
   .book-info {
     width: 30%;
@@ -443,7 +446,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-
+  /* Responsive */
   @media (max-width: 906px) {
     .book-container {
       flex-direction: column;

@@ -52,7 +52,9 @@ a {
 ul {
     list-style: none;
 }
-
+input, select, textarea {
+    outline: none;
+}
 
 /* Theme change */
 #theme-change {
@@ -337,7 +339,7 @@ i {
 }
 
 footer {
-    background-color: #f1f2f6;
+    background-color: #ecf0f3;
     height: auto;
     display: flex;
     flex-direction: column;

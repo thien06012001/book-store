@@ -6,6 +6,7 @@
   ID: s3975010
   Acknowledgement: Codepen.io, uiverse.io, Amazon.com, https://tympanus.net */
 
+/* Theme color changing styling */
 .theme-change:checked~.form-container {
     background-color: #222;
 }
@@ -51,6 +52,8 @@
     box-shadow: inset 2px 2px 4px #0e0e0e,
         inset -2px -2px 4px #363636;
 }
+
+/* Form Styling */
 .form-container {
     display: flex;
     flex-direction: column;
@@ -70,14 +73,11 @@
     box-shadow: 1px 1px 3px 0 #c4ceda, -4px 0 3px 0 hsla(0, 0%, 100%, 0.6), 0 -4px 3px 0 hsla(0, 0%, 100%, 0.6), -2px -2px 14px 4px #fff, 3px 3px 8px 0 #b0c4db, 3px 3px 15px 0 #c4ceda;
     border-radius: 10px;
     padding: 40px;
-    
-
 }
 
 .form-container h1 {
     margin: 25px;
     text-align: center;
-    /* padding-top: 20px; */
     font-size: xx-large;
     color: white;
     font-family: Sriracha;
@@ -202,6 +202,7 @@
 .text-note textarea {
     resize: none;
     border: none;
+    padding: 10px;
     background: #f1f2f6;
     width: 50%;
     box-shadow: inset 2px 2px 4px #606162,
@@ -240,7 +241,7 @@
         inset 2px 2px 2px rgba(255, 255, 255, 0.075),
         inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
-
+/* Responsive */
 @media (max-width: 960px) {
     .contact-form {
         padding: 15px;
