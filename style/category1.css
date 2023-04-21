@@ -68,18 +68,93 @@
 }
 
 .book-info {
-    width: fit-content;
+    width: 30%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.book-info a,
-.book-info p {
+.book-name {
     margin-top: 20px;
+    border: 1px solid #fff;
+	background-color: #f1f2f6;
+	width: 80%;
+	border-radius: 15px;
+	padding: 8px;
+	box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.name-outer{
+    display: flex;
+	width: 100%;
+	/* padding: 1.5rem 2rem; */
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
+}
+.name-inner {
+    width: 100%;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+	position: relative;
+	flex: 1;
+}
+.name-inner a {
     color: black;
+    height: 5vh;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-weight: bold;
+}
+.name-inner a::-webkit-scrollbar {
+    display: none;
+}
+.book-price {
+    margin-top: 20px;
+    border: 1px solid #fff;
+	background-color: #f1f2f6;
+	width: fit-content;
+	border-radius: 15px;
+	padding: 8px;
+	box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.price-outer{
+    display: flex;
+	width: 100%;
+	/* padding: 1.5rem 2rem; */
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
+}
+.price-inner {
+    display: flex;
+	align-items: center;
+    justify-content: center;
+	position: relative;
+	flex: 1;
+}
+.price-inner p {
+    color: black;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-inner p::-webkit-scrollbar {
+    display: none;
 }
 
 main hr {
@@ -355,11 +430,17 @@ main hr {
     background-repeat: no-repeat;
 }
 @media (max-width: 906px) {
+    .category-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .book-container {
         flex-direction: column;
         align-items: center;
     }
-
+    .book-info {
+        width: 100%;
+    }
     main hr {
         display: block;
         height: 2px;

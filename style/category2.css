@@ -6,366 +6,455 @@
   ID: s3975010
   Acknowledgement: Codepen.io, uiverse.io, Amazon.com, https://tympanus.net */
 
-.theme-change:checked~.categories {
-  background-color: #222;
-}
+  .theme-change:checked~.categories {
+    background-color: #222;
+  }
 
-.theme-change:checked~.categories .category-container .book-container {
-  color: white;
-  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5),
-  inset 3px 3px 5px rgba(255, 255, 255, 0.07);
-}
+  .theme-change:checked~.categories .category-container .book-container {
+    color: white;
+    box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+      inset 3px 3px 5px rgba(255, 255, 255, 0.07);
+  }
 
-.theme-change:checked~.categories .category-container .book-container .book-info a{
-  color: white;
-}
+  .theme-change:checked~.categories .category-container .book-container .book-info a {
+    color: white;
+  }
 
-.theme-change:checked~.categories .category-container .book-container .book-info p{
-  color: white;
-}
+  .theme-change:checked~.categories .category-container .book-container .book-info p {
+    color: white;
+  }
 
-.categories {
-  width: 100%;
-  background-color: #f1f2f6;
-}
+  .categories {
+    width: 100%;
+    background-color: #f1f2f6;
+  }
 
-.category-container {
-  max-width: 100%;
-  margin: auto;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-}
+  .category-container {
+    max-width: 100%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
 
-.category-header {
-  text-align: center;
-  /* padding-top: 20px; */
-  padding-bottom: 20px;
-  font-size: xx-large;
-  color: white;
-  font-family: Sriracha;
-  cursor: pointer;
-  text-shadow: 0 0 10px #0ff,
+  .category-header {
+    text-align: center;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+    font-size: xx-large;
+    color: white;
+    font-family: Sriracha;
+    cursor: pointer;
+    text-shadow: 0 0 10px #0ff,
       0 0 10px #0ff;
-}
+  }
 
 
-.book-container {
-  width: 90%;
-  height: 80%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 12px;
-  box-shadow: 1px 1px 3px 0 #c4ceda,
+  .book-container {
+    width: 90%;
+    height: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px 0 #c4ceda,
       -4px 0 3px 0 hsla(0, 0%, 100%, 0.6),
       0 -4px 3px 0 hsla(0, 0%, 100%, 0.6),
       -2px -2px 14px 4px #fff,
       3px 3px 8px 0 #b0c4db,
       3px 3px 15px 0 #c4ceda;
-}
+  }
 
-.book-info {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .book-info {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.book-info a,
-.book-info p {
-  margin-top: 20px;
-  color: black;
-}
+  .book-name {
+    margin-top: 20px;
+    border: 1px solid #fff;
+    background-color: #f1f2f6;
+    width: 80%;
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
 
-main hr {
-  display: none;
-}
+  .name-outer {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
+  }
 
-.stage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
+  .name-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+  }
 
-.stage .book {
-  position: relative;
-  width: 160px;
-  height: 220px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  transform-style: preserve-3d;
-  transition: 0.5s;
-}
+  .name-inner a {
+    color: black;
+    height: 5vh;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
 
-.stage .book:hover {
-  transform: rotateY(35deg);
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-}
-.stage .book:active {
-  transform: rotateY(180deg);
-}
-.stage .book img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* Book 1 */
-.stage .book1:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/reactjs-book/book1/book1-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .name-inner a::-webkit-scrollbar {
+    display: none;
+  }
 
-.stage .book1::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/reactjs-book/book1/book1-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .book-price {
+    margin-top: 20px;
+    border: 1px solid #fff;
+    background-color: #f1f2f6;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
 
-/* Book 2 */
-.stage .book2:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/reactjs-book/book2/book2-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .price-outer {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
+  }
 
-.stage .book2::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/reactjs-book/book2/book2-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .price-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+  }
 
-/* Book 3 */
-.stage .book3:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/reactjs-book/book3/book3-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .price-inner p {
+    color: black;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  }
 
-.stage .book3::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/reactjs-book/book3/book3-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* Book 4 */
-.stage .book4:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/nextjs-book/book1/book1-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.stage .book4::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/nextjs-book/book1/book1-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* Book 5 */
-.stage .book5:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/nextjs-book/book2/book2-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.stage .book5::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/nextjs-book/book2/book2-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* Book 6 */
-.stage .book6:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/nextjs-book/book3/book3-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.stage .book6::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/nextjs-book/book3/book3-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* Book 7 */
-.stage .book7:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/angular-book/book1/book1-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.stage .book7::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/angular-book/book1/book1-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* Book 8 */
-.stage .book8:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/angular-book/book2/book2-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.stage .book8::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/angular-book/book2/book2-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* Book 9 */
-.stage .book9:before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  transform-origin: left;
-  background: url(../assets/images/book/angular-book/book3/book3-trim.png);
-  background-position: center;
-  transform: rotateY(90deg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.stage .book9::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  background: url(../assets/images/book/angular-book/book3/book3-back.png);
-  background-position: center;
-  transform: rotateY(180deg) translateZ(20px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media (max-width: 906px) {
-  .book-container {
-      flex-direction: column;
-      align-items: center;
+  .price-inner p::-webkit-scrollbar {
+    display: none;
   }
 
   main hr {
+    display: none;
+  }
+
+  .stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .stage .book {
+    position: relative;
+    width: 160px;
+    height: 220px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+  }
+
+  .stage .book:hover {
+    transform: rotateY(35deg);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .stage .book:active {
+    transform: rotateY(180deg);
+  }
+
+  .stage .book img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Book 1 */
+  .stage .book1:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/reactjs-book/book1/book1-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/reactjs-book/book1/book1-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Book 2 */
+  .stage .book2:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/reactjs-book/book2/book2-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/reactjs-book/book2/book2-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Book 3 */
+  .stage .book3:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/reactjs-book/book3/book3-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/reactjs-book/book3/book3-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Book 4 */
+  .stage .book4:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/nextjs-book/book1/book1-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book4::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/nextjs-book/book1/book1-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Book 5 */
+  .stage .book5:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/nextjs-book/book2/book2-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book5::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/nextjs-book/book2/book2-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Book 6 */
+  .stage .book6:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/nextjs-book/book3/book3-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book6::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/nextjs-book/book3/book3-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Book 7 */
+  .stage .book7:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/angular-book/book1/book1-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book7::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/angular-book/book1/book1-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Book 8 */
+  .stage .book8:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/angular-book/book2/book2-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book8::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/angular-book/book2/book2-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Book 9 */
+  .stage .book9:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform-origin: left;
+    background: url(../assets/images/book/angular-book/book3/book3-trim.png);
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .stage .book9::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background: url(../assets/images/book/angular-book/book3/book3-back.png);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 906px) {
+    .book-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main hr {
       display: block;
       height: 2px;
       width: 100%;
       margin-top: 20px;
       margin-bottom: 20px;
+    }
   }
-}

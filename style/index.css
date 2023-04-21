@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Indie+Flower); 
   /* RMIT University Vietnam
   Course: COSC2430 Web Programming
   Semester: 2023A
@@ -37,10 +38,17 @@
 .theme-change:checked~.banner-container .banner-content .addition-content .finder .finder__outer {
   box-shadow: inset 10px 10px 15px -10px #171717, inset -10px -10px 15px -10px #2d2d2d;
 }
+.theme-change:checked~.main {
+	background-color: #222;
+}
+
+.theme-change:checked~.main .container {
+	box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+		inset 3px 3px 5px rgba(255, 255, 255, 0.07);
+}
 
 .category-header {
   text-align: center;
-  /* padding-top: 20px; */
   padding-bottom: 20px;
   font-size: xx-large;
   color: white;
@@ -53,7 +61,7 @@
 .banner-container {
   width: 100%;
   background-color: #f1f2f6;
-  /* height: 50vh; */
+
   height: fit-content;
   padding: 15px;
 }
@@ -69,6 +77,47 @@
     inset -5px -5px 10px #ffffff;
 }
 
+
+.finder {
+	border: 1px solid #fff;
+	background-color: #f1f2f6;
+	width: 80%;
+	border-radius: 15px;
+	padding: 8px;
+	box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+.finder__outer {
+	display: flex;
+	width: 100%;
+	/* padding: 1.5rem 2rem; */
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
+  }
+  
+  .finder__inner {
+	display: flex;
+	align-items: center;
+	position: relative;
+	flex: 1;
+  }
+  
+  
+  .finder__input {
+	height: 80%;
+	width: 90%;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	font-size: 1.5rem;
+	letter-spacing: 0.75px;
+  }
+  
+  #finder__icon {
+	font-size: larger;
+	margin-right: 5px;
+  }
+  
 .addition-content {
   width: 50%;
   display: flex;
@@ -92,73 +141,11 @@
 }
 
 
-.finder {
-  border: 1px solid #fff;
-  background-color: #f1f2f6;
-  width: 80%;
-  border-radius: 15px;
-  padding: 8px;
-  box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-}
-
-.finder__outer {
-  display: flex;
-  width: 100%;
-  /* padding: 1.5rem 2rem; */
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
-}
-
-.finder__inner {
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex: 1;
-}
 
 
-.finder__input {
-  height: 80%;
-  width: 90%;
-  border: none;
-  background-color: transparent;
-  outline: none;
-  font-size: 1.5rem;
-  letter-spacing: 0.75px;
-}
 
-#finder__icon {
-  font-size: larger;
-  margin-right: 5px;
-}
 
-@import url(//fonts.googleapis.com/css?family=Indie+Flower);
-  
-/* RMIT University Vietnam
-  Course: COSC2430 Web Programming
-  Semester: 2023A
-  Assessment: Assignment 1
-  Author: Chau Chan Thien
-  ID: s3975010
-  Acknowledgement: Codepen.io, uiverse.io, Amazon.com, https://tympanus.net */
 
-/* 
-body {
-	background: #ecf0f1;
-	color: #34495e;
-	font-family: 'Lato', 'Arial', sans-serif;
-	font-weight: 400;
-	line-height: 1.2;
-} */
-.theme-change:checked~.main {
-	background-color: #222;
-}
-
-.theme-change:checked~.main .container {
-	box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5),
-		inset 3px 3px 5px rgba(255, 255, 255, 0.07);
-}
 
 /* ///////////////////////////////////////////////////
 

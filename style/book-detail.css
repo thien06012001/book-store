@@ -144,7 +144,29 @@ section {
     border-radius: 5px;
     box-shadow: 1px 1px 3px 0 #c4ceda, -4px 0 3px 0 hsla(0, 0%, 100%, 0.6), 0 -4px 3px 0 hsla(0, 0%, 100%, 0.6), -2px -2px 14px 4px #fff, 3px 3px 8px 0 #b0c4db, 3px 3px 15px 0 #c4ceda;
 }
+.book-name {
+    border-radius: 9999px;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: inset 5px 5px 10px #a1a2a5,
+    inset -5px -5px 10px #ffffff;
+}
 
+.book-price {
+    border-radius: 9999px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: fit-content;
+    padding: 15px;
+    box-shadow: inset 5px 5px 10px #a1a2a5,
+    inset -5px -5px 10px #ffffff;
+}
 .book-description {
     border-radius: 9999px;
     height:fit-content;
@@ -160,25 +182,8 @@ section {
 }
 
 
-.book-name {
-    border-radius: 9999px;
-    height: fit-content;
-    padding: 20px;
-    margin-top: 10px;
-    
-    margin-bottom: 10px;
-    box-shadow: inset 5px 5px 10px #a1a2a5,
-    inset -5px -5px 10px #ffffff;
-}
-.book-price {
-    border-radius: 9999px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: fit-content;
-    padding: 15px;
-    box-shadow: inset 5px 5px 10px #a1a2a5,
-    inset -5px -5px 10px #ffffff;
-}
+
+
 
 .add-to-cart {
     margin-top: 10px;
@@ -387,5 +392,19 @@ section {
     }
     .charging-card{
         width: 100%;
+    }
+
+    .book-name {
+        border-radius: 50px;
+        
+    }
+    
+    .book-price {
+        border-radius: 50px;
+       
+    }
+    .book-description {
+        border-radius: 50px;
+     
     }
 }
