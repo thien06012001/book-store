@@ -73,12 +73,17 @@
       font-size: xx-large;
       color: white;
       font-family: Sriracha;
-      cursor: pointer;
+      ;
       text-shadow: 0 0 10px #0ff,
           0 0 10px #0ff;
   }
 
-
+  .category-header a {
+    color: white;
+    text-align: center;
+    font-family: Sriracha;
+    /* cursor: pointer */
+  }
   .book-container {
       width: 90%;
       height: 80%;

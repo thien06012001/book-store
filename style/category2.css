@@ -68,16 +68,19 @@
   }
 
   .category-header {
-    text-align: center;
+    
     padding-bottom: 20px;
     font-size: xx-large;
-    color: white;
-    font-family: Sriracha;
+    
     cursor: pointer;
     text-shadow: 0 0 10px #0ff,
       0 0 10px #0ff;
   }
-
+  .category-header a {
+    text-align: center;
+    color: white;
+    font-family: Sriracha;
+  }
   /* Book styling */
   .book-container {
     width: 90%;
