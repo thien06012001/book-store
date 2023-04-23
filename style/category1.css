@@ -73,7 +73,6 @@
       font-size: xx-large;
       color: white;
       font-family: Sriracha;
-      ;
       text-shadow: 0 0 10px #0ff,
           0 0 10px #0ff;
   }
@@ -82,7 +81,6 @@
     color: white;
     text-align: center;
     font-family: Sriracha;
-    /* cursor: pointer */
   }
   .book-container {
       width: 90%;

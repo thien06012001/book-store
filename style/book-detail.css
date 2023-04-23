@@ -70,7 +70,6 @@ main {
 /* Path component design */
 .path {
     padding: 25px;
-
 }
 
 .path p {
@@ -80,6 +79,8 @@ main {
     padding: 15px;
     box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7), -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* Main image and Sub image styling */
 
 section {
     display: flex;
@@ -108,123 +109,7 @@ section {
     box-shadow: inset 5px 5px 10px #a1a2a5,
         inset -5px -5px 10px #ffffff;
 }
-
-.sub-images {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.sub-image {
-    width: 90%;
-    height: 30%;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: inset 5px 5px 10px #a1a2a5,
-        inset -5px -5px 10px #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sub-image:nth-child(1) {
-    margin-top: 0;
-}
-
-.sub-image:nth-child(3) {
-    margin-bottom: 0;
-}
-
-.sub-image img {
-    width: 50%;
-    height: 90%;
-}
-
-.charging-card {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px 0 #c4ceda, -4px 0 3px 0 hsla(0, 0%, 100%, 0.6), 0 -4px 3px 0 hsla(0, 0%, 100%, 0.6), -2px -2px 14px 4px #fff, 3px 3px 8px 0 #b0c4db, 3px 3px 15px 0 #c4ceda;
-}
-
-.book-name {
-    border-radius: 9999px;
-    height: fit-content;
-    padding: 20px;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    text-align: center;
-    box-shadow: inset 5px 5px 10px #a1a2a5,
-        inset -5px -5px 10px #ffffff;
-}
-
-.book-price {
-    border-radius: 9999px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: fit-content;
-    padding: 15px;
-    box-shadow: inset 5px 5px 10px #a1a2a5,
-        inset -5px -5px 10px #ffffff;
-}
-
-.book-description {
-    border-radius: 9999px;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 30px;
-    box-shadow: inset 5px 5px 10px #a1a2a5,
-        inset -5px -5px 10px #ffffff;
-}
-
-.add-to-cart {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    outline: none;
-    border: none;
-    padding: 15px;
-    transition: 0.2s ease-in-out;
-    border-radius: 9999px;
-    box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7), -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.add-to-cart:hover {
-    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
-        -2px -2px 4px rgba(255, 255, 255, 0.4),
-        2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.add-to-cart:active {
-    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
-        inset -2px -2px 4px rgba(255, 255, 255, 0.5),
-        inset 2px 2px 2px rgba(255, 255, 255, 0.075),
-        inset 2px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-.book-container {
-    position: relative;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    animation: rotate 10s infinite linear;
-    width: 150px;
-    height: 240px;
-}
-
+/* 3D spinning book styling */
 .face {
     position: absolute;
     top: 0;
@@ -323,6 +208,122 @@ section {
     left: 0;
     animation: lightingeffect 10s infinite linear;
     animation-delay: 0s;
+}
+
+.sub-images {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-image {
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: inset 5px 5px 10px #a1a2a5,
+        inset -5px -5px 10px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-image:nth-child(1) {
+    margin-top: 0;
+}
+
+.sub-image:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.sub-image img {
+    width: 50%;
+    height: 90%;
+}
+/* Book information card styling */
+.charging-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 0 #c4ceda, -4px 0 3px 0 hsla(0, 0%, 100%, 0.6), 0 -4px 3px 0 hsla(0, 0%, 100%, 0.6), -2px -2px 14px 4px #fff, 3px 3px 8px 0 #b0c4db, 3px 3px 15px 0 #c4ceda;
+}
+
+.book-name {
+    border-radius: 9999px;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: inset 5px 5px 10px #a1a2a5,
+        inset -5px -5px 10px #ffffff;
+}
+
+.book-price {
+    border-radius: 9999px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: fit-content;
+    padding: 15px;
+    box-shadow: inset 5px 5px 10px #a1a2a5,
+        inset -5px -5px 10px #ffffff;
+}
+
+.book-description {
+    border-radius: 9999px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-shadow: inset 5px 5px 10px #a1a2a5,
+        inset -5px -5px 10px #ffffff;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 15px;
+    transition: 0.2s ease-in-out;
+    border-radius: 9999px;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7), -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.add-to-cart:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+        -2px -2px 4px rgba(255, 255, 255, 0.4),
+        2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart:active {
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+        inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+        inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.book-container {
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    animation: rotate 10s infinite linear;
+    width: 150px;
+    height: 240px;
 }
 
 /* Book rotate animation */
