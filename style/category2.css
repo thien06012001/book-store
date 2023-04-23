@@ -20,11 +20,35 @@
 
   .theme-change:checked~.categories .category-container .book-container .book-info a {
     color: white;
+    text-shadow: 0 0 3px #0ff,
+        0 0 3px #0ff;
   }
 
   .theme-change:checked~.categories .category-container .book-container .book-info p {
     color: white;
+    text-shadow: 0 0 3px #0ff,
+        0 0 3px #0ff;
   }
+
+  .theme-change:checked~.categories .category-container .book-container .book-name{
+    background-color: #222;
+	border: 1px solid rgb(50, 50, 50);
+	box-shadow: 9px 9px 16px rgba(34, 34, 34, 0.6), -9px -9px 16px rgba(0, 0, 0, 0.5);
+}
+
+.theme-change:checked~.categories .category-container .book-container .book-name .name-outer {
+    box-shadow: inset 10px 10px 15px -10px #171717, inset -10px -10px 15px -10px #2d2d2d;
+}
+
+.theme-change:checked~.categories .category-container .book-container .book-price{
+    background-color: #222;
+	border: 1px solid rgb(50, 50, 50);
+	box-shadow: 9px 9px 16px rgba(34, 34, 34, 0.6), -9px -9px 16px rgba(0, 0, 0, 0.5);
+}
+
+.theme-change:checked~.categories .category-container .book-container .book-price .price-outer {
+    box-shadow: inset 10px 10px 15px -10px #171717, inset -10px -10px 15px -10px #2d2d2d;
+}
 
   /* Book category styling */
   .categories {
