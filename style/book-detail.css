@@ -1,5 +1,4 @@
-
-  /* RMIT University Vietnam
+/* RMIT University Vietnam
   Course: COSC2430 Web Programming
   Semester: 2023A
   Assessment: Assignment 1
@@ -10,7 +9,8 @@
 .theme-change:checked~main {
     background-color: #222;
 }
-.theme-change:checked~main .path p{
+
+.theme-change:checked~main .path p {
     color: white;
     text-shadow: 0 0 10px rgba(33, 156, 243, 1), 0 0 10px rgba(33, 156, 243, 1);
     box-shadow: inset -6px -6px 15px rgba(0, 0, 0, 0.5), inset 6px 6px 10px rgba(255, 255, 255, 0.07);
@@ -21,7 +21,7 @@
     text-shadow: 0 0 10px rgba(33, 156, 243, 1), 0 0 10px rgba(33, 156, 243, 1);
 }
 
-.theme-change:checked~main section .image-container .main-image{
+.theme-change:checked~main section .image-container .main-image {
     box-shadow: inset 5px 5px 10px #171717, inset -5px -5px 10px #2d2d2d;
 }
 
@@ -45,22 +45,23 @@
     text-shadow: 0 0 10px rgba(33, 156, 243, 1), 0 0 10px rgba(33, 156, 243, 1);
 }
 
-.theme-change:checked~main section .charging-card button{
+.theme-change:checked~main section .charging-card button {
     color: white;
     background: #222;
     text-shadow: 0 0 10px rgba(33, 156, 243, 1), 0 0 10px rgba(33, 156, 243, 1);
     box-shadow: inset -6px -6px 15px rgba(0, 0, 0, 0.5), inset 6px 6px 10px rgba(255, 255, 255, 0.07);
 }
 
-.theme-change:checked~main section .charging-card button:hover{
+.theme-change:checked~main section .charging-card button:hover {
     box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5),
         inset 2px 2px 4px rgba(255, 255, 255, 0.07);
 }
 
-.theme-change:checked~main section .charging-card button:active{
+.theme-change:checked~main section .charging-card button:active {
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5),
         3px 3px 5px rgba(255, 255, 255, 0.07);
 }
+
 /* Book page design */
 main {
     background-color: #f1f2f6;
@@ -69,7 +70,7 @@ main {
 /* Path component design */
 .path {
     padding: 25px;
-    
+
 }
 
 .path p {
@@ -105,7 +106,7 @@ section {
     perspective: 1500px;
     border-radius: 5px;
     box-shadow: inset 5px 5px 10px #a1a2a5,
-    inset -5px -5px 10px #ffffff;
+        inset -5px -5px 10px #ffffff;
 }
 
 .sub-images {
@@ -114,13 +115,14 @@ section {
     display: flex;
     flex-direction: column;
 }
+
 .sub-image {
     width: 90%;
     height: 30%;
     margin: auto;
     border-radius: 5px;
     box-shadow: inset 5px 5px 10px #a1a2a5,
-    inset -5px -5px 10px #ffffff;
+        inset -5px -5px 10px #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,10 +135,12 @@ section {
 .sub-image:nth-child(3) {
     margin-bottom: 0;
 }
-.sub-image img{
+
+.sub-image img {
     width: 50%;
     height: 90%;
 }
+
 .charging-card {
     width: 50%;
     display: flex;
@@ -147,6 +151,7 @@ section {
     border-radius: 5px;
     box-shadow: 1px 1px 3px 0 #c4ceda, -4px 0 3px 0 hsla(0, 0%, 100%, 0.6), 0 -4px 3px 0 hsla(0, 0%, 100%, 0.6), -2px -2px 14px 4px #fff, 3px 3px 8px 0 #b0c4db, 3px 3px 15px 0 #c4ceda;
 }
+
 .book-name {
     border-radius: 9999px;
     height: fit-content;
@@ -158,7 +163,7 @@ section {
     margin-bottom: 10px;
     text-align: center;
     box-shadow: inset 5px 5px 10px #a1a2a5,
-    inset -5px -5px 10px #ffffff;
+        inset -5px -5px 10px #ffffff;
 }
 
 .book-price {
@@ -168,11 +173,12 @@ section {
     height: fit-content;
     padding: 15px;
     box-shadow: inset 5px 5px 10px #a1a2a5,
-    inset -5px -5px 10px #ffffff;
+        inset -5px -5px 10px #ffffff;
 }
+
 .book-description {
     border-radius: 9999px;
-    height:fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,12 +187,8 @@ section {
     margin-bottom: 10px;
     padding: 30px;
     box-shadow: inset 5px 5px 10px #a1a2a5,
-    inset -5px -5px 10px #ffffff;
+        inset -5px -5px 10px #ffffff;
 }
-
-
-
-
 
 .add-to-cart {
     margin-top: 10px;
@@ -203,16 +205,17 @@ section {
 
 .add-to-cart:hover {
     box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
-    -2px -2px 4px rgba(255, 255, 255, 0.4),
-    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+        -2px -2px 4px rgba(255, 255, 255, 0.4),
+        2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.add-to-cart:active{
+.add-to-cart:active {
     box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
         inset -2px -2px 4px rgba(255, 255, 255, 0.5),
         inset 2px 2px 2px rgba(255, 255, 255, 0.075),
         inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
+
 .book-container {
     position: relative;
     transform-style: preserve-3d;
@@ -220,109 +223,108 @@ section {
     animation: rotate 10s infinite linear;
     width: 150px;
     height: 240px;
-  }
-  
-  .face {
+}
+
+.face {
     position: absolute;
     top: 0;
     left: 0;
     background-size: cover;
-  }
-  
-  .face-cover {
+}
+
+.face-cover {
     width: 100%;
     height: 100%;
     transform: translateX(0%) translateY(0%) translateZ(17px);
-  }
-  
-  .face-spine {
+}
+
+.face-spine {
     width: 34px;
     height: 100%;
     transform: translateX(170%) translateY(0%) rotateY(-90deg) translateZ(75px);
-  }
-  
-  .face-back {
+}
+
+.face-back {
     width: 100%;
     height: 100%;
     transform: translateX(0%) rotateY(-180deg) translateZ(17px);
-  }
-  
-  .face-side {
+}
+
+.face-side {
     width: 34px;
     height: 100%;
     transform: translateX(170%) translateY(0%) rotateY(90deg) translateZ(75px);
-  }
-  
-  .face-cover img {
+}
+
+.face-cover img {
     width: 100%;
     height: 100%;
-  }
-  
-  .face-spine img {
+}
+
+.face-spine img {
     width: 100%;
     height: 100%;
-  }
-  
-  .face-back img {
+}
+
+.face-back img {
     width: 100%;
     height: 100%;
-  }
-  
-  .face-side img {
+}
+
+.face-side img {
     width: 100%;
     height: 100%;
-  }
-  
-  
-  .glass-front {
+}
+
+.glass-front {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(90deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.25) 25%,
-        rgba(0, 0, 0, 0.15) 50%,
-        rgba(255, 255, 255, 0) 100%);
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.25) 25%,
+            rgba(0, 0, 0, 0.15) 50%,
+            rgba(255, 255, 255, 0) 100%);
     transform: translateX(0%) translateY(0%) translateZ(17px);
     position: absolute;
     top: 0;
     left: 0;
     animation: lightingeffect 10s infinite linear;
     animation-delay: -3.1s;
-  }
-  
-  .glass-trim {
+}
+
+.glass-trim {
     width: 100%;
     height: 100%;
-  
+
     background-image: linear-gradient(90deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.25) 25%,
-        rgba(0, 0, 0, 0.15) 50%,
-        rgba(255, 255, 255, 0) 100%);
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.25) 25%,
+            rgba(0, 0, 0, 0.15) 50%,
+            rgba(255, 255, 255, 0) 100%);
     position: absolute;
-  
+
     top: 0;
     left: 0;
     animation: lightingeffect 10s infinite linear;
     animation-delay: -1.55s;
-  }
-  
-  .glass-back {
+}
+
+.glass-back {
     width: 100%;
     height: 100%;
-  
+
     background-image: linear-gradient(90deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.25) 25%,
-        rgba(0, 0, 0, 0.15) 50%,
-        rgba(255, 255, 255, 0) 100%);
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.25) 25%,
+            rgba(0, 0, 0, 0.15) 50%,
+            rgba(255, 255, 255, 0) 100%);
     position: absolute;
     top: 0;
     left: 0;
     animation: lightingeffect 10s infinite linear;
     animation-delay: 0s;
-  }
-  
+}
+
 /* Book rotate animation */
 @keyframes rotate {
     0% {
@@ -361,20 +363,24 @@ section {
         background-size: 500% 200%, auto 100%, auto 100%, auto 100%;
     }
 }
+
 /* Responsive */
 @media (max-width: 960px) {
     section {
         flex-direction: column;
     }
+
     /* Change images component arrangement to vertical way */
-    .image-container{
+    .image-container {
         width: 100%;
         flex-direction: column;
         height: 100vh;
     }
+
     .main-image {
         width: 100%;
     }
+
     .sub-images {
         flex-direction: row;
         width: 100%;
@@ -392,26 +398,28 @@ section {
         margin-left: 0;
         margin-top: 10px;
     }
-    
+
     .sub-image:nth-child(3) {
         margin-right: 0;
         margin-bottom: 10px;
     }
-    .charging-card{
+
+    .charging-card {
         width: 100%;
     }
 
     .book-name {
         border-radius: 50px;
-        
+
     }
-    
+
     .book-price {
         border-radius: 50px;
-       
+
     }
+
     .book-description {
         border-radius: 50px;
-     
+
     }
 }
