@@ -78,10 +78,11 @@
   }
 
   .category-header a {
-    color: white;
-    text-align: center;
-    font-family: Sriracha;
+      color: white;
+      text-align: center;
+      font-family: Sriracha;
   }
+
   .book-container {
       width: 90%;
       height: 80%;
@@ -473,7 +474,7 @@
   }
 
   /* Responsive */
-  @media (max-width: 906px) {
+  @media (max-width: 960px) {
       .category-container {
           padding-left: 0px;
           padding-right: 0px;

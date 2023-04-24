@@ -472,7 +472,7 @@
     background-repeat: no-repeat;
   }
     /* Responsive */
-    @media (max-width: 906px) {
+    @media (max-width: 960px) {
       .category-container {
           padding-left: 0px;
           padding-right: 0px;
