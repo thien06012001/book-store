@@ -471,18 +471,27 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  /* Responsive */
-  @media (max-width: 906px) {
-    .book-container {
-      flex-direction: column;
-      align-items: center;
-    }
+    /* Responsive */
+    @media (max-width: 906px) {
+      .category-container {
+          padding-left: 0px;
+          padding-right: 0px;
+      }
 
-    main hr {
-      display: block;
-      height: 2px;
-      width: 100%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+      .book-container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .book-info {
+          width: 100%;
+      }
+
+      main hr {
+          display: block;
+          height: 2px;
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
   }
